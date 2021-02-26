@@ -11,7 +11,7 @@ sudo apt-get install php php-mysql
 
 ```shell
 cd /var/www/html
-git clone https://github.com/bh3nvn/sites.git
+git clone https://github.com/bh3nvn/pi-dashboard-amlogic.git
 ```
 
 enjoy~
