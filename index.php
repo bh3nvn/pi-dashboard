@@ -4,7 +4,7 @@ require_once(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'device.php');
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>Pi Dashboard</title>
+    <title>Pi Dashboard-Amlogic</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
