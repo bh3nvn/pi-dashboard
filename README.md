@@ -1,8 +1,20 @@
-# Pi Dashboard
-A WebUI dashboard for IoT devices likes raspberry pi.
+# Pi-Dashboard-Amlogic
+改为Amlogic电视盒子平台。
 
-Project details: (https://make.quwj.com/project/10)
+```shell
+sudo apt-get install apache2
+```
 
-Copyright 2017-2020 NXEZ.com.
+```shell
+sudo apt-get install php php-mysql
+```
+
+```shell
+cd /var/www/html
+git clone https://github.com/bh3nvn/sites.git
+```
+
+enjoy~
 
 Licensed under the GPL v3.0 license.
+

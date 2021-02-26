@@ -29,7 +29,7 @@ $D['os'] = explode(" ", php_uname());
 
 if (($str = @file("/proc/cpuinfo")) !== false){
     $str = implode("", $str);
-    @preg_match_all("/model\s+name\s{0,}\:+\s{0,}([\w\s\)\(\@.-]+)([\r\n]+)/s", $str, $model);
+    @preg_match_all("/processor\s{0,}\:+s{0,}([\w\s\)\(\@.-]+)([\r\n]+)/s", $str, $model);
     @preg_match_all("/BogoMIPS\s{0,}\:+\s{0,}([\d\.]+)[\r\n]+/", $str, $bogomips);
     @preg_match_all("/Model\s{0,}\:+\s{0,}([\w\s\)\(\@.-]+)([\r\n]+)/s", $str, $pimodel);
 
@@ -40,12 +40,12 @@ if (($str = @file("/proc/cpuinfo")) !== false){
             $D['cpu']['model'] = $model[1][0].$bogomips[1][0];
         }
         else{
-            $D['cpu']['model'] = $model[1][0].$bogomips[1][0].' ×'.$D['cpu']['count'];
+            $D['cpu']['model'] = "ARM Cortex-A53".$bogomips[1][0].' ×'.$D['cpu']['count'];
         }
     }
 
     if (false !== is_array($pimodel[1])){
-        $D['model']['pimodel'] = $pimodel[1][0];
+        $D['model']['pimodel'] = 'Amlogic S905 TV-Box Hacked By BH3NVN';/*$pimodel[1][0];*/
     }
 }
 else{
