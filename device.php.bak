@@ -42,7 +42,7 @@ if (($str = @file("/proc/cpuinfo")) !== false){
         }
         else{
         	  //$D['cpu']['model'] = $model[1][0].$bogomips[1][0].' ×'.$D['cpu']['count'];
-            $D['cpu']['model'] = "ARMv8 Processor rev 4 (v8l) ".$bogomips[1][0].' ×'.$D['cpu']['count'];
+            $D['cpu']['model'] = "ARM Cortex-A53".$bogomips[1][0].' ×'.$D['cpu']['count'];
         }
     }
 
